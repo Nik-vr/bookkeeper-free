@@ -1,0 +1,292 @@
+object AddRasForm: TAddRasForm
+  Left = 423
+  Height = 227
+  Top = 399
+  Width = 850
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  ClientHeight = 227
+  ClientWidth = 850
+  FormStyle = fsStayOnTop
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '0.9.31'
+  object ButtonPanel1: TButtonPanel
+    Left = 6
+    Height = 35
+    Top = 186
+    Width = 838
+    Anchors = [akLeft, akBottom]
+    AutoSize = False
+    OKButton.Name = 'OKButton'
+    OKButton.Caption = 'Добавить'
+    OKButton.OnClick = OKButtonClick
+    HelpButton.Name = 'HelpButton'
+    HelpButton.Caption = '&Справка'
+    HelpButton.Enabled = False
+    CloseButton.Name = 'CloseButton'
+    CloseButton.Caption = 'Ещё'
+    CloseButton.Enabled = False
+    CancelButton.Name = 'CancelButton'
+    CancelButton.Caption = 'Отмена'
+    TabOrder = 0
+    DefaultButton = pbClose
+    ShowButtons = [pbOK, pbCancel]
+    ShowBevel = False
+    object ElseButton: TSpeedButton
+      Left = 541
+      Height = 35
+      Top = 0
+      Width = 81
+      Action = ActionElse
+      Align = alCustom
+      BorderSpacing.Right = 1
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000000000000000
+        0000000000000000000000000000C2632EBFC4652FFFC76730FFCA6A30FFCD6C
+        31FFD06E32BF0000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000C1632EFFF4BD86FFEE9C4FFFEE9641FFF19C
+        47FFD06E32FF0000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000C1622EFFF4BD87FFE8934FFFE98F41FFF29E
+        49FFCF6E32FF0000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000C0622EFFF4BD87FFE68F4EFFE88B41FFF29E
+        48FFCE6D31FF0000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000C0612DFFF4BC86FFE68E4DFFE7893FFFF19C
+        46FFCD6C31FF0000000000000000000000000000000000000000B05629BFB358
+        2AFFB65A2BFFB95C2BFFBC5E2CFFBE602DFFF3BC86FFE48B4BFFE5863DFFEF98
+        43FFCB6A30FFCD6C31FFCE6D31FFCF6E32FFD06E32FFD06E32DFAF5529FFF0B9
+        8AFFE69353FFE38740FFE38236FFE38232FFE99349FFE07E3AFFE38139FFED94
+        3FFFEF9943FFF19C46FFF29E48FFF29E49FFF19D47FFCD6C31FFAE5428FFF0B9
+        8AFFDD834CFFD87339FFDA763AFFDB783AFFDC7736FFDB7433FFDE7835FFE381
+        39FFE5863DFFE78940FFE88C41FFEA8F42FFEE9641FFCA6A30FFAD5328FFF0B9
+        8BFFDF8C5AFFDA7E4BFFDC814CFFDE844EFFE0874FFFDD7D42FFDE7E40FFE286
+        44FFE69154FFE79254FFE89455FFEA9856FFEFA157FFC76730FFAC5228FFEFB9
+        8BFFF0B98BFFF1BA8AFFF1BB8BFFF1BC8BFFF2BD8BFFE08750FFDE7E3FFFEB9D
+        57FFF4C08DFFF5C18DFFF5C18DFFF5C18DFFF5C18DFFC4652FFFAA5127BFAD52
+        28FFAF5428FFB15629FFB3582AFFB65A2AFFF1BC8BFFDE844EFFDC7A3DFFE68E
+        44FFBE602DFFC0612DFFC0622EFFC1622EFFC1632EFFC2632EA6000000000000
+        0000000000000000000000000000B3582AFFF1BB8BFFDC814DFFDA763BFFE58B
+        42FFBC5E2CFF0000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000B15629FFF1BA8BFFDB7F4BFFD8733AFFE389
+        42FFB95C2BFF0000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000AF5428FFF0BA8BFFDF8C5BFFDD834DFFE694
+        53FFB65A2BFF0000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000AD5228FFF0BA8BFFF0BA8BFFF0BA8BFFF0BA
+        8BFFB3582AFF0000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000AA5127BFAC5228FFAD5328FFAE5428FFAF55
+        29FFB05629BF0000000000000000000000000000000000000000
+      }
+      NumGlyphs = 0
+    end
+  end
+  object GroupBox1: TGroupBox
+    Left = 5
+    Height = 175
+    Top = 5
+    Width = 460
+    Align = alLeft
+    BorderSpacing.Left = 5
+    BorderSpacing.Top = 5
+    Caption = 'Данные о расходе'
+    ClientHeight = 153
+    ClientWidth = 456
+    TabOrder = 1
+    object CatBox: TComboBox
+      Left = 95
+      Height = 26
+      Top = 45
+      Width = 350
+      AutoSize = False
+      ItemHeight = 20
+      OnChange = IzmBoxChange
+      OnDrawItem = CatBoxDrawItem
+      OnSelect = CatBoxSelect
+      ReadOnly = True
+      Style = csOwnerDrawFixed
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Left = 6
+      Height = 18
+      Top = 48
+      Width = 81
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Категория:'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 204
+      Height = 18
+      Top = 120
+      Width = 100
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Примечание:'
+      ParentColor = False
+    end
+    object MemoEdit: TEdit
+      Left = 310
+      Height = 28
+      Top = 115
+      Width = 135
+      AutoSize = False
+      OnChange = IzmBoxChange
+      OnKeyPress = MemoEditKeyPress
+      TabOrder = 4
+    end
+    object RasDateTimePicker: TZVDateTimePicker
+      Left = 95
+      Height = 28
+      Top = 115
+      Width = 100
+      CenturyFrom = 1941
+      MaxDate = 2958465
+      MinDate = 37257
+      AutoSize = False
+      TabOrder = 5
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHMS
+      DateMode = dmComboBox
+      Date = 40392
+      Time = 0.81278307870525
+      UseDefaultSeparators = True
+      OnChange = IzmBoxChange
+    end
+    object Label4: TLabel
+      Left = 12
+      Height = 18
+      Top = 118
+      Width = 75
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Дата:'
+      ParentColor = False
+    end
+    object IzmBox: TComboBox
+      Left = 375
+      Height = 28
+      Top = 80
+      Width = 70
+      AutoSize = False
+      ItemHeight = 20
+      OnChange = IzmBoxChange
+      Style = csDropDownList
+      TabOrder = 6
+    end
+    object Label6: TLabel
+      Left = 247
+      Height = 18
+      Top = 83
+      Width = 57
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Кол-во:'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 11
+      Height = 18
+      Top = 83
+      Width = 76
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Цена:'
+      ParentColor = False
+    end
+    object CountEdit: TCurrencyEdit
+      Left = 310
+      Height = 28
+      Top = 80
+      Width = 60
+      OnChange = IzmBoxChange
+      TabOrder = 3
+      Text = '0'
+      Value = 0
+    end
+    object PriceEdit: TCurrencyEdit
+      Left = 95
+      Height = 28
+      Top = 80
+      Width = 100
+      OnChange = IzmBoxChange
+      TabOrder = 2
+      Text = '0'
+      Value = 0
+    end
+    object Label3: TLabel
+      Left = 12
+      Height = 18
+      Top = 13
+      Width = 75
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Счёт:'
+      ParentColor = False
+    end
+    object BillBox: TComboBox
+      Left = 95
+      Height = 26
+      Top = 10
+      Width = 350
+      AutoSize = False
+      ItemHeight = 20
+      OnChange = IzmBoxChange
+      OnDrawItem = BillBoxDrawItem
+      OnSelect = BillBoxSelect
+      ReadOnly = True
+      Style = csOwnerDrawFixed
+      TabOrder = 0
+    end
+  end
+  object BasketBox: TGroupBox
+    Left = 475
+    Height = 175
+    Top = 5
+    Width = 370
+    Align = alClient
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 5
+    BorderSpacing.Right = 5
+    Caption = 'Состав корзины'
+    ClientHeight = 153
+    ClientWidth = 366
+    TabOrder = 2
+    object BasketGrid: TStringGrid
+      Left = 5
+      Height = 133
+      Top = 10
+      Width = 356
+      Align = alClient
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 10
+      BorderSpacing.Right = 5
+      BorderSpacing.Bottom = 10
+      ColCount = 4
+      DefaultDrawing = False
+      DefaultRowHeight = 25
+      FixedCols = 0
+      FixedRows = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goRowSelect, goSmoothScroll]
+      RowCount = 1
+      TabOrder = 0
+      OnClick = BasketGridClick
+      OnDrawCell = BasketGridDrawCell
+    end
+  end
+  object ActionList1: TActionList
+    left = 10
+    top = 190
+    object ActionElse: TAction
+      Caption = 'Ещё'
+      Hint = 'Добавить ещё один расход'
+      OnExecute = ActionElseExecute
+      ShortCut = 113
+    end
+  end
+end

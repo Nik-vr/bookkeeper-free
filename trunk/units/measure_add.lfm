@@ -1,0 +1,65 @@
+object MeasureAddForm: TMeasureAddForm
+  Left = 559
+  Height = 114
+  Top = 343
+  Width = 355
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Внесение новой единицы измерения'
+  ClientHeight = 114
+  ClientWidth = 355
+  FormStyle = fsStayOnTop
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '0.9.29'
+  object GroupBox1: TGroupBox
+    Left = 5
+    Height = 65
+    Top = 5
+    Width = 342
+    Caption = 'Данные о единице измерения'
+    ClientHeight = 43
+    ClientWidth = 338
+    TabOrder = 0
+    object MeasureEdit: TEdit
+      Left = 87
+      Height = 25
+      Top = 9
+      Width = 240
+      AutoSize = False
+      OnChange = MeasureEditChange
+      OnKeyPress = MeasureEditKeyPress
+      TabOrder = 0
+    end
+    object MeasureLabel: TLabel
+      Left = 3
+      Height = 18
+      Top = 11
+      Width = 76
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Название:'
+      ParentColor = False
+    end
+  end
+  object ButtonPanel1: TButtonPanel
+    Left = 6
+    Height = 30
+    Top = 78
+    Width = 343
+    OKButton.Name = 'OKButton'
+    OKButton.Caption = '&Добавить'
+    OKButton.OnClick = OKButtonClick
+    HelpButton.Name = 'HelpButton'
+    HelpButton.Caption = '&Справка'
+    HelpButton.Enabled = False
+    CloseButton.Name = 'CloseButton'
+    CloseButton.Caption = '&Закрыть'
+    CloseButton.Enabled = False
+    CancelButton.Name = 'CancelButton'
+    CancelButton.Caption = 'Отмена'
+    TabOrder = 1
+    ShowButtons = [pbOK, pbCancel]
+    ShowBevel = False
+  end
+end
