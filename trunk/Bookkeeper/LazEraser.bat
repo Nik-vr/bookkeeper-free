@@ -1,6 +1,6 @@
 @echo off
 echo -----------------------------------------------
-echo Written By Nik (www.megabyte-web.ru)
+echo Written By Nik (http://petrochenko.ru)
 echo -=    Lazarus work-files erasor   =-
 echo -----------------------------------------------
 echo Erase files with mask *.tmp
