@@ -1,0 +1,35 @@
+object HintForm: THintForm
+  Left = 660
+  Height = 154
+  Top = 358
+  Width = 249
+  BorderStyle = bsNone
+  Caption = 'Подсказка'
+  ClientHeight = 154
+  ClientWidth = 249
+  FormStyle = fsStayOnTop
+  OnShow = FormShow
+  LCLVersion = '0.9.31'
+  object HintBox: TListBox
+    Left = 0
+    Height = 154
+    Top = 0
+    Width = 249
+    Align = alClient
+    Color = clInfoBk
+    Items.Strings = (
+      'Это типа подсказка'
+      'такая оригинальная :)'
+      'Здесь будет куча информации.'
+      ''
+      'Колбаса..........................................55.11'
+      'Хлеб.......................................................8.9'
+      'Итого...............................................67.01'
+    )
+    ItemHeight = 20
+    OnDrawItem = HintBoxDrawItem
+    OnMouseEnter = HintBoxMouseEnter
+    Style = lbOwnerDrawFixed
+    TabOrder = 0
+  end
+end

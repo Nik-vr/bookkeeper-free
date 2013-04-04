@@ -1,0 +1,30 @@
+program Bookkeeper;
+
+{$MODE Delphi}
+
+uses
+  Interfaces, Forms, main, splash, unique_utils;
+
+var UniProg: TUniqueInstance;
+
+{$R *.res}
+
+begin
+  UniProg:=TUniqueInstance.Create('Bookkeeper');
+  if UniProg.IsRunInstance then // Ааа уже запущенно! тогда закрываем
+   begin
+    // MyUnique.SendString('Up');
+    UniProg.Free;
+    Halt(1);
+   end;
+  UniProg.RunListen; // Запуск первого экземпляра приложения
+
+  Application.Initialize;
+  Application.CreateForm(TSplashForm, SplashForm);
+ // Application.CreateForm(TMainForm, MainForm);
+  Application.Run;
+
+  // MyUnique.OnMessage:=nil;
+  UniProg.StopListen; // Уничтожаемся
+  UniProg.Free;
+end.

@@ -1,0 +1,162 @@
+object AddDohForm: TAddDohForm
+  Left = 645
+  Height = 221
+  Top = 390
+  Width = 475
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  ClientHeight = 221
+  ClientWidth = 475
+  FormStyle = fsStayOnTop
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '0.9.31'
+  object GroupBox1: TGroupBox
+    Left = 6
+    Height = 170
+    Top = 5
+    Width = 460
+    Caption = 'Данные о доходе'
+    ClientHeight = 148
+    ClientWidth = 456
+    TabOrder = 0
+    object CatBox: TComboBox
+      Left = 95
+      Height = 26
+      Top = 45
+      Width = 350
+      AutoSize = False
+      ItemHeight = 20
+      OnChange = SumEditChange
+      OnDrawItem = CatBoxDrawItem
+      ReadOnly = True
+      Style = csOwnerDrawFixed
+      TabOrder = 0
+    end
+    object BillBox: TComboBox
+      Left = 95
+      Height = 26
+      Top = 10
+      Width = 352
+      AutoSize = False
+      ItemHeight = 20
+      OnChange = SumEditChange
+      OnDrawItem = BillBoxDrawItem
+      ReadOnly = True
+      Style = csOwnerDrawFixed
+      TabOrder = 2
+    end
+    object Label2: TLabel
+      Left = 7
+      Height = 18
+      Top = 48
+      Width = 81
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Категория:'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 12
+      Height = 18
+      Top = 13
+      Width = 76
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Счёт:'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 17
+      Height = 18
+      Top = 83
+      Width = 71
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Сумма:'
+      ParentColor = False
+    end
+    object DohDateTimePicker: TZVDateTimePicker
+      Left = 97
+      Height = 28
+      Top = 115
+      Width = 100
+      CenturyFrom = 1941
+      MaxDate = 2958465
+      MinDate = 37257
+      AutoSize = False
+      TabOrder = 3
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHMS
+      DateMode = dmComboBox
+      Date = 40392
+      Time = 0.4852466203738
+      UseDefaultSeparators = True
+    end
+    object Label5: TLabel
+      Left = -8
+      Height = 18
+      Top = 118
+      Width = 96
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Дата:'
+      ParentColor = False
+    end
+    object Label1: TLabel
+      Left = 207
+      Height = 18
+      Top = 118
+      Width = 96
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Примечание:'
+      ParentColor = False
+    end
+    object MemoEdit: TEdit
+      Left = 310
+      Height = 25
+      Top = 115
+      Width = 135
+      AutoSize = False
+      OnKeyPress = MemoEditKeyPress
+      TabOrder = 1
+    end
+    object SumEdit: TCurrencyEdit
+      Left = 97
+      Height = 28
+      Top = 80
+      Width = 100
+      OnChange = SumEditChange
+      TabOrder = 4
+      Text = '0'
+      Value = 0
+    end
+  end
+  object ButtonPanel1: TButtonPanel
+    Left = 6
+    Height = 35
+    Top = 180
+    Width = 463
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    OKButton.Name = 'OKButton'
+    OKButton.Caption = 'Добавить'
+    OKButton.OnClick = OKButtonClick
+    HelpButton.Name = 'HelpButton'
+    HelpButton.Caption = '&Справка'
+    HelpButton.Enabled = False
+    CloseButton.Name = 'CloseButton'
+    CloseButton.Caption = '&Закрыть'
+    CloseButton.Enabled = False
+    CancelButton.Name = 'CancelButton'
+    CancelButton.Caption = 'Отмена'
+    ButtonOrder = boCloseOKCancel
+    TabOrder = 1
+    ShowButtons = [pbOK, pbCancel]
+    ShowBevel = False
+  end
+end

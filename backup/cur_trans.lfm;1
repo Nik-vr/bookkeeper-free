@@ -1,0 +1,214 @@
+object TransCurForm: TTransCurForm
+  Left = 499
+  Height = 268
+  Top = 183
+  Width = 380
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  ClientHeight = 268
+  ClientWidth = 380
+  FormStyle = fsStayOnTop
+  OnShow = FormShow
+  LCLVersion = '0.9.29'
+  object GroupBox1: TGroupBox
+    Left = 5
+    Height = 216
+    Top = 5
+    Width = 367
+    Caption = 'Данные о переводе'
+    ClientHeight = 194
+    ClientWidth = 363
+    TabOrder = 0
+    object OutBillBox: TComboBox
+      Left = 80
+      Height = 28
+      Top = 10
+      Width = 275
+      ItemHeight = 22
+      OnChange = OutBillBoxChange
+      OnDrawItem = OutBillBoxDrawItem
+      ReadOnly = True
+      Style = csOwnerDrawFixed
+      TabOrder = 0
+    end
+    object Label1: TLabel
+      Left = 5
+      Height = 18
+      Top = 13
+      Width = 70
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Со счёта:'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 5
+      Height = 18
+      Top = 120
+      Width = 70
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Сумма:'
+      ParentColor = False
+    end
+    object InBillBox: TComboBox
+      Left = 80
+      Height = 28
+      Top = 45
+      Width = 275
+      ItemHeight = 22
+      OnChange = SumEditChange
+      OnDrawItem = InBillBoxDrawItem
+      ReadOnly = True
+      Style = csOwnerDrawFixed
+      TabOrder = 1
+    end
+    object Label3: TLabel
+      Left = 5
+      Height = 18
+      Top = 48
+      Width = 70
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'На счёт:'
+      ParentColor = False
+    end
+    object TransDateTimePicker: TZVDateTimePicker
+      Left = 80
+      Height = 28
+      Top = 81
+      Width = 100
+      CenturyFrom = 1941
+      MaxDate = 2958465
+      MinDate = -53780
+      AutoSize = False
+      TabOrder = 2
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHMS
+      DateMode = dmComboBox
+      Date = 40409
+      Time = 0.70419767361454
+      UseDefaultSeparators = True
+    end
+    object Label4: TLabel
+      Left = 5
+      Height = 18
+      Top = 83
+      Width = 70
+      Alignment = taRightJustify
+      AutoSize = False
+      Caption = 'Дата:'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 33
+      Height = 16
+      Top = 147
+      Width = 35
+      Caption = 'Label5'
+      Font.Color = clGray
+      Font.Height = -12
+      ParentColor = False
+      ParentFont = False
+    end
+    object Panel1: TPanel
+      Left = 188
+      Height = 103
+      Top = 81
+      Width = 167
+      BevelInner = bvRaised
+      BevelOuter = bvLowered
+      ClientHeight = 103
+      ClientWidth = 167
+      TabOrder = 4
+      object Label7: TLabel
+        Left = 10
+        Height = 21
+        Top = 7
+        Width = 73
+        Caption = 'Комиссия:'
+        ParentColor = False
+      end
+      object NoRadioButton: TRadioButton
+        Left = 9
+        Height = 24
+        Top = 34
+        Width = 49
+        Caption = 'Нет'
+        Checked = True
+        OnClick = NoRadioButtonClick
+        TabOrder = 0
+        TabStop = True
+      end
+      object ProcRadioButton: TRadioButton
+        Left = 59
+        Height = 24
+        Top = 34
+        Width = 36
+        Caption = '%'
+        OnClick = NoRadioButtonClick
+        TabOrder = 1
+      end
+      object CurRadioButton: TRadioButton
+        Left = 99
+        Height = 23
+        Top = 34
+        Width = 24
+        OnClick = NoRadioButtonClick
+        TabOrder = 2
+      end
+      object CommLabel: TLabel
+        Left = 73
+        Height = 21
+        Top = 69
+        Width = 9
+        Caption = '1'
+        ParentColor = False
+      end
+      object CommEdit: TCurrencyEdit
+        Left = 10
+        Height = 28
+        Top = 64
+        Width = 55
+        TabOrder = 3
+        Text = '0'
+        Value = 0
+      end
+    end
+    object SumEdit: TCurrencyEdit
+      Left = 80
+      Height = 28
+      Top = 118
+      Width = 100
+      OnChange = SumEditChange
+      TabOrder = 3
+      Text = '0'
+      Value = 0
+    end
+  end
+  object ButtonPanel1: TButtonPanel
+    Left = 6
+    Height = 32
+    Top = 230
+    Width = 368
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    OKButton.Name = 'OKButton'
+    OKButton.Caption = '&ОК'
+    OKButton.OnClick = OKButtonClick
+    HelpButton.Name = 'HelpButton'
+    HelpButton.Caption = '&Справка'
+    HelpButton.Enabled = False
+    CloseButton.Name = 'CloseButton'
+    CloseButton.Caption = '&Закрыть'
+    CloseButton.Enabled = False
+    CancelButton.Name = 'CancelButton'
+    CancelButton.Caption = 'Отмена'
+    TabOrder = 1
+    ShowButtons = [pbOK, pbCancel]
+    ShowBevel = False
+  end
+end
