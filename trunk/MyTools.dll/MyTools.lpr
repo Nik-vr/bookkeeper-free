@@ -64,6 +64,8 @@ exports
 
 //{$R *.res}
 
+{$R *.res}
+
 begin
   //
 end.
