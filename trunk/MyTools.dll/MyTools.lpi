@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <AlwaysBuild Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MinorVersionNr Value="9"/>
+      <BuildNr Value="6"/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <Units Count="12">
+      <Unit0>
+        <Filename Value="MyTools.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MyTools"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="18"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="MyTools.pas"/>
+        <UnitName Value="MyTools"/>
+        <TopLine Value="1"/>
+        <CursorPos X="62" Y="12"/>
+        <UsageCount Value="9"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\Lazarus\fpc\2.4.1\source\rtl\objpas\sysutils\sysansih.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2"/>
+        <CursorPos X="10" Y="24"/>
+        <UsageCount Value="9"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\Lazarus\fpc\2.4.1\source\packages\fv\src\dialogs.pas"/>
+        <UnitName Value="Dialogs"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="16"/>
+        <CursorPos X="31" Y="12"/>
+        <UsageCount Value="9"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\Lazarus\fpc\2.4.1\source\rtl\win\wininc\redef.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1134"/>
+        <CursorPos X="24" Y="1147"/>
+        <UsageCount Value="9"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="Rubles.pas"/>
+        <UnitName Value="Rubles"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="18" Y="117"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\Components\indy\lazarus\IdHTTP.pas"/>
+        <UnitName Value="IdHTTP"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="14"/>
+        <CursorPos X="3" Y="19"/>
+        <UsageCount Value="9"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\Components\indy\lazarus\indylaz.pas"/>
+        <UnitName Value="indylaz"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="9"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="httpsend.pas"/>
+        <UnitName Value="httpsend"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="132"/>
+        <CursorPos X="14" Y="145"/>
+        <UsageCount Value="9"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="blcksock.pas"/>
+        <UnitName Value="blcksock"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="78"/>
+        <CursorPos X="10" Y="96"/>
+        <UsageCount Value="9"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\Lazarus\fpc\2.4.3\source\packages\fcl-xml\src\dom.pp"/>
+        <UnitName Value="DOM"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2020"/>
+        <CursorPos X="55" Y="2033"/>
+        <UsageCount Value="9"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\Components\synapse\httpsend.pas"/>
+        <UnitName Value="httpsend"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="112"/>
+        <CursorPos X="14" Y="125"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+    </Units>
+    <JumpHistory Count="25" HistoryIndex="24">
+      <Position1>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="6" Column="1" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="21" Column="8" TopLine="7"/>
+      </Position2>
+      <Position3>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="5" Column="1" TopLine="1"/>
+      </Position3>
+      <Position4>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="7" Column="50" TopLine="1"/>
+      </Position4>
+      <Position5>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="10" Column="1" TopLine="1"/>
+      </Position5>
+      <Position6>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="7" Column="41" TopLine="1"/>
+      </Position6>
+      <Position7>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="9" Column="28" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="14" Column="1" TopLine="1"/>
+      </Position8>
+      <Position9>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="35" Column="15" TopLine="19"/>
+      </Position9>
+      <Position10>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="18" Column="22" TopLine="12"/>
+      </Position10>
+      <Position11>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="30" Column="13" TopLine="16"/>
+      </Position11>
+      <Position12>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="33" Column="7" TopLine="20"/>
+      </Position12>
+      <Position13>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="35" Column="32" TopLine="20"/>
+      </Position13>
+      <Position14>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="68" Column="33" TopLine="59"/>
+      </Position14>
+      <Position15>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="9" Column="27" TopLine="1"/>
+      </Position15>
+      <Position16>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="6" Column="45" TopLine="1"/>
+      </Position16>
+      <Position17>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="17" Column="2" TopLine="10"/>
+      </Position17>
+      <Position18>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="8" Column="1" TopLine="1"/>
+      </Position18>
+      <Position19>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="55" Column="1" TopLine="33"/>
+      </Position19>
+      <Position20>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="3" Column="1" TopLine="1"/>
+      </Position20>
+      <Position21>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="58" Column="22" TopLine="45"/>
+      </Position21>
+      <Position22>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="63" Column="6" TopLine="53"/>
+      </Position22>
+      <Position23>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="6" Column="27" TopLine="1"/>
+      </Position23>
+      <Position24>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="23" Column="12" TopLine="10"/>
+      </Position24>
+      <Position25>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="35" Column="3" TopLine="26"/>
+      </Position25>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="MyTools"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="synapse\"/>
+      <OtherUnitFiles Value="..\Components\synapse\"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <CStyleOperator Value="False"/>
+        <AllowLabel Value="False"/>
+        <CPPInline Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <TargetOS Value="Win32"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <StripSymbols Value="True"/>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <ExecutableType Value="Library"/>
+      </Options>
+    </Linking>
+    <Other>
+      <WriteFPCLogo Value="False"/>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
