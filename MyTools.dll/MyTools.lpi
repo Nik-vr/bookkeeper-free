@@ -7,7 +7,6 @@
       <Flags>
         <MainUnitHasCreateFormStatements Value="False"/>
         <MainUnitHasTitleStatement Value="False"/>
-        <AlwaysBuild Value="False"/>
       </Flags>
       <MainUnit Value="0"/>
       <UseAppBundle Value="False"/>
@@ -26,6 +25,9 @@
       <CharSet Value=""/>
       <StringTable ProductVersion=""/>
     </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
       <IgnoreBinaries Value="False"/>
@@ -37,16 +39,15 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <Units Count="12">
+    <Units Count="13">
       <Unit0>
         <Filename Value="MyTools.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="MyTools"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
-        <CursorPos X="1" Y="18"/>
+        <CursorPos X="36" Y="15"/>
         <UsageCount Value="36"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -136,8 +137,19 @@
         <CursorPos X="14" Y="125"/>
         <UsageCount Value="10"/>
       </Unit11>
+      <Unit12>
+        <Filename Value="..\Components\synapse\synsock.pas"/>
+        <UnitName Value="synsock"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="51"/>
+        <CursorPos X="28" Y="63"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit12>
     </Units>
-    <JumpHistory Count="25" HistoryIndex="24">
+    <JumpHistory Count="28" HistoryIndex="27">
       <Position1>
         <Filename Value="MyTools.lpr"/>
         <Caret Line="6" Column="1" TopLine="1"/>
@@ -238,17 +250,29 @@
         <Filename Value="MyTools.lpr"/>
         <Caret Line="35" Column="3" TopLine="26"/>
       </Position25>
+      <Position26>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="16" Column="38" TopLine="1"/>
+      </Position26>
+      <Position27>
+        <Filename Value="MyTools.lpr"/>
+        <Caret Line="6" Column="33" TopLine="1"/>
+      </Position27>
+      <Position28>
+        <Filename Value="..\Components\synapse\synsock.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position28>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
-    <Version Value="9"/>
+    <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
       <Filename Value="MyTools"/>
     </Target>
     <SearchPaths>
-      <IncludeFiles Value="synapse\"/>
-      <OtherUnitFiles Value="..\Components\synapse\"/>
+      <IncludeFiles Value="synapse;$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..\Components\synapse"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Parsing>
@@ -259,7 +283,7 @@
       </SyntaxOptions>
     </Parsing>
     <CodeGeneration>
-      <TargetOS Value="Win32"/>
+      <TargetOS Value="win32"/>
     </CodeGeneration>
     <Linking>
       <Debugging>
@@ -292,4 +316,5 @@
       </Item3>
     </Exceptions>
   </Debugging>
+  <EditorMacros Count="0"/>
 </CONFIG>
