@@ -1108,9 +1108,11 @@ begin
    end;
 end;
 
+// Запуск калькулятора (Win)
 procedure TMainForm.CulcButtonClick(Sender: TObject);
 begin
- WinExec('c:\Windows\System32\calc.exe',SW_RESTORE);
+ // Полный путь, т.к. команда calc вызывает установленный OpenOffice/LibreOffice Calc
+ ShellExecute(0, nil, PChar('c:\Windows\System32\calc.exe'),'',nil,1)
 end;
 
 procedure TMainForm.CurGridDblClick(Sender: TObject);
