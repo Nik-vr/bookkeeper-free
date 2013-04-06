@@ -29,42 +29,60 @@ object MainForm: TMainForm
     TabOrder = 0
     object DohButton: TToolButton
       Left = 1
+      Hint = 'Добавить доход'
       Top = 0
       Action = AddDohod
       ImageIndex = 0
+      ParentShowHint = False
+      ShowHint = True
     end
     object RasButton: TToolButton
       Left = 53
+      Hint = 'Добавить расход'
       Top = 0
       Action = AddRashod
       ImageIndex = 1
+      ParentShowHint = False
+      ShowHint = True
     end
     object InfoButton: TToolButton
       Left = 261
+      Hint = 'Информация о программе'
       Top = 0
       Caption = 'InfoButton'
       ImageIndex = 2
       OnClick = InfoButtonClick
+      ParentShowHint = False
+      ShowHint = True
     end
     object SelectUserButton: TToolButton
       Left = 157
+      Hint = 'Управление пользователями'
       Top = 0
       ImageIndex = 3
       OnClick = SelectUserButtonClick
+      ParentShowHint = False
+      ShowHint = True
     end
     object TransCurButton: TToolButton
       Left = 105
+      Hint = 'Перевод средств'
       Top = 0
       Caption = 'TransCurButton'
       ImageIndex = 4
       OnClick = TransCurBtnClick
+      ParentShowHint = False
+      ShowHint = True
     end
     object CulcButton: TToolButton
       Left = 209
+      Hint = 'Калькулятор'
       Top = 0
       Caption = 'CulcButton'
       ImageIndex = 5
       OnClick = CulcButtonClick
+      ParentShowHint = False
+      ShowHint = True
     end
     object Panel5: TPanel
       Left = 832
@@ -114,10 +132,12 @@ object MainForm: TMainForm
     Height = 527
     Top = 60
     Width = 1093
-    ActivePage = TabSheet6
+    ActivePage = TabSheet7
     Align = alClient
     Images = TabsImageList
-    TabIndex = 0
+    ParentShowHint = False
+    ShowHint = True
+    TabIndex = 6
     TabOrder = 1
     OnChange = PageControl1Change
     object TabSheet6: TTabSheet
@@ -545,7 +565,7 @@ object MainForm: TMainForm
         ClientWidth = 1085
         TabOrder = 1
         object GridUsersSelect: TComboBox
-          Left = 528
+          Left = 525
           Height = 28
           Top = 4
           Width = 180
@@ -565,7 +585,7 @@ object MainForm: TMainForm
           Left = 10
           Height = 34
           Top = 6
-          Width = 87
+          Width = 86
           Align = alLeft
           BorderSpacing.Left = 10
           BorderSpacing.Top = 6
@@ -574,7 +594,7 @@ object MainForm: TMainForm
           ParentColor = False
         end
         object GridPeriodSelect: TComboBox
-          Left = 343
+          Left = 341
           Height = 28
           Top = 4
           Width = 150
@@ -595,10 +615,10 @@ object MainForm: TMainForm
           Text = 'Неделя'
         end
         object Label4: TLabel
-          Left = 266
+          Left = 265
           Height = 34
           Top = 6
-          Width = 72
+          Width = 71
           Align = alLeft
           BorderSpacing.Left = 5
           BorderSpacing.Top = 6
@@ -607,7 +627,7 @@ object MainForm: TMainForm
           ParentColor = False
         end
         object GridTypeSelect: TComboBox
-          Left = 102
+          Left = 101
           Height = 28
           Top = 4
           Width = 159
@@ -626,10 +646,10 @@ object MainForm: TMainForm
           Text = 'доходы и расходы'
         end
         object Label5: TLabel
-          Left = 498
+          Left = 496
           Height = 34
           Top = 6
-          Width = 25
+          Width = 24
           Align = alLeft
           BorderSpacing.Left = 5
           BorderSpacing.Top = 6
@@ -670,10 +690,13 @@ object MainForm: TMainForm
           Transparent = True
           object AddBillButton: TToolButton
             Left = 1
+            Hint = 'Создать новый счёт'
             Top = 0
             Caption = 'AddBillButton'
             ImageIndex = 2
             OnClick = AddBillButtonClick
+            ParentShowHint = False
+            ShowHint = True
           end
           object ToolButton13: TToolButton
             Left = 33
@@ -684,10 +707,13 @@ object MainForm: TMainForm
           end
           object EditBillButton: TToolButton
             Left = 43
+            Hint = 'Редактировать счёт'
             Top = 0
             Caption = 'EditBillButton'
             ImageIndex = 0
             OnClick = EditBillButtonClick
+            ParentShowHint = False
+            ShowHint = True
           end
           object ToolButton17: TToolButton
             Left = 75
@@ -698,10 +724,13 @@ object MainForm: TMainForm
           end
           object DelBillButton: TToolButton
             Left = 85
+            Hint = 'Удалить счёт'
             Top = 0
             Caption = 'DelBillButton'
             ImageIndex = 1
             OnClick = DelBillButtonClick
+            ParentShowHint = False
+            ShowHint = True
           end
           object ToolButton3: TToolButton
             Left = 117
@@ -940,10 +969,13 @@ object MainForm: TMainForm
           Transparent = True
           object AddCatRasButton: TToolButton
             Left = 1
+            Hint = 'Создать новую категорию'
             Top = 0
             Caption = 'AddCatRasButton'
             ImageIndex = 2
             OnClick = AddCatRasButtonClick
+            ParentShowHint = False
+            ShowHint = True
           end
           object ToolButton22: TToolButton
             Left = 75
@@ -954,10 +986,13 @@ object MainForm: TMainForm
           end
           object EditCatRasButton: TToolButton
             Left = 85
+            Hint = 'Редактировать категорию'
             Top = 0
             Caption = 'EditCatRasButton'
             ImageIndex = 0
             OnClick = EditCatRasButtonClick
+            ParentShowHint = False
+            ShowHint = True
           end
           object ToolButton24: TToolButton
             Left = 117
@@ -968,17 +1003,23 @@ object MainForm: TMainForm
           end
           object DelCatRasButton: TToolButton
             Left = 127
+            Hint = 'Удалить категорию'
             Top = 0
             Caption = 'DelCatRasButton'
             ImageIndex = 1
             OnClick = DelCatRasButtonClick
+            ParentShowHint = False
+            ShowHint = True
           end
           object AddPodcatRasButton: TToolButton
             Left = 43
+            Hint = 'Создать подкатегорию'
             Top = 0
             Caption = 'AddPodcatRasButton'
             ImageIndex = 4
             OnClick = AddPodcatRasButtonClick
+            ParentShowHint = False
+            ShowHint = True
           end
           object ToolButton29: TToolButton
             Left = 33
@@ -1053,10 +1094,13 @@ object MainForm: TMainForm
           Transparent = True
           object AddCatDohButton: TToolButton
             Left = 1
+            Hint = 'Создать новую категорию'
             Top = 0
             Caption = 'AddCatDohButton'
             ImageIndex = 2
             OnClick = AddCatDohButtonClick
+            ParentShowHint = False
+            ShowHint = True
           end
           object ToolButton16: TToolButton
             Left = 33
@@ -1067,10 +1111,13 @@ object MainForm: TMainForm
           end
           object EditCatDohButton: TToolButton
             Left = 85
+            Hint = 'Редактировать категорию'
             Top = 0
             Caption = 'EditCatDohButton'
             ImageIndex = 0
             OnClick = EditCatDohButtonClick
+            ParentShowHint = False
+            ShowHint = True
           end
           object ToolButton19: TToolButton
             Left = 117
@@ -1081,17 +1128,23 @@ object MainForm: TMainForm
           end
           object DelCatDohButton: TToolButton
             Left = 127
+            Hint = 'Удалить категорию'
             Top = 0
             Caption = 'DelCatDohButton'
             ImageIndex = 1
             OnClick = DelCatDohButtonClick
+            ParentShowHint = False
+            ShowHint = True
           end
           object AddPodcatDohButton: TToolButton
             Left = 43
+            Hint = 'Создать подкатегорию'
             Top = 0
             Caption = 'AddPodcatDohButton'
             ImageIndex = 4
             OnClick = AddPodcatDohButtonClick
+            ParentShowHint = False
+            ShowHint = True
           end
           object ToolButton27: TToolButton
             Left = 75
@@ -1134,6 +1187,7 @@ object MainForm: TMainForm
           Transparent = True
           object AddUserButton: TToolButton
             Left = 1
+            Hint = 'Добавить пользователя'
             Top = 0
             Caption = 'AddUserButton'
             ImageIndex = 2
@@ -1148,6 +1202,7 @@ object MainForm: TMainForm
           end
           object EditUserButton: TToolButton
             Left = 43
+            Hint = 'Редактировать пользователя'
             Top = 0
             Caption = 'EditUserButton'
             ImageIndex = 0
@@ -1162,6 +1217,7 @@ object MainForm: TMainForm
           end
           object DelUserButton: TToolButton
             Left = 85
+            Hint = 'Удалить пользователя'
             Top = 0
             Caption = 'DelUserButton'
             ImageIndex = 1
@@ -1252,6 +1308,7 @@ object MainForm: TMainForm
           Transparent = True
           object AddIzmButton: TToolButton
             Left = 1
+            Hint = 'Создать единицу измерения'
             Top = 0
             Caption = 'AddIzmButton'
             ImageIndex = 2
@@ -1259,6 +1316,7 @@ object MainForm: TMainForm
           end
           object EditIzmButton: TToolButton
             Left = 43
+            Hint = 'Редактировать единицу измерения'
             Top = 0
             Caption = 'EditIzmButton'
             ImageIndex = 0
@@ -1280,6 +1338,7 @@ object MainForm: TMainForm
           end
           object DelIzmButton: TToolButton
             Left = 85
+            Hint = 'Удалить единицу измерения'
             Top = 0
             Caption = 'DelIzmButton'
             ImageIndex = 1
@@ -1336,6 +1395,7 @@ object MainForm: TMainForm
           Transparent = True
           object AddCurButton: TToolButton
             Left = 1
+            Hint = 'Добавить новую валюту'
             Top = 0
             Caption = 'AddCurButton'
             ImageIndex = 2
@@ -1350,6 +1410,7 @@ object MainForm: TMainForm
           end
           object EditCurButton: TToolButton
             Left = 43
+            Hint = 'Редактировать валюту'
             Top = 0
             Caption = 'EditCurButton'
             ImageIndex = 0
@@ -1364,6 +1425,7 @@ object MainForm: TMainForm
           end
           object DelCurButton: TToolButton
             Left = 85
+            Hint = 'Удалить валюту'
             Top = 0
             Caption = 'DelCurButton'
             ImageIndex = 1
@@ -1378,6 +1440,7 @@ object MainForm: TMainForm
           end
           object ValutButton: TToolButton
             Left = 127
+            Hint = 'Получить курс валюты с сайта ЦБРФ'
             Top = 0
             Caption = 'ValutButton'
             ImageIndex = 3

@@ -88,8 +88,8 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="346"/>
-        <CursorPos X="16" Y="359"/>
+        <TopLine Value="1"/>
+        <CursorPos X="9" Y="2"/>
         <UsageCount Value="228"/>
         <Bookmarks Count="2">
           <Item0 X="36" Y="1695" ID="3"/>
@@ -525,8 +525,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="hint"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="24" Y="9"/>
+        <TopLine Value="122"/>
+        <CursorPos X="14" Y="127"/>
         <UsageCount Value="130"/>
       </Unit51>
       <Unit52>
@@ -608,7 +608,7 @@
         <UsageCount Value="9"/>
       </Unit61>
     </Units>
-    <JumpHistory Count="22" HistoryIndex="21">
+    <JumpHistory Count="24" HistoryIndex="23">
       <Position1>
         <Filename Value="main.pas"/>
         <Caret Line="1" Column="1" TopLine="1"/>
@@ -697,6 +697,14 @@
         <Filename Value="main.pas"/>
         <Caret Line="8" Column="15" TopLine="1"/>
       </Position22>
+      <Position23>
+        <Filename Value="main.pas"/>
+        <Caret Line="891" Column="32" TopLine="879"/>
+      </Position23>
+      <Position24>
+        <Filename Value="main.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position24>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>

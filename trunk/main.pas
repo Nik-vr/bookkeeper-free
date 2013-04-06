@@ -887,9 +887,9 @@ end;
 
 procedure TMainForm.TransCurBtnClick(Sender: TObject);
 begin
- if BillGrid.RowCount>2
- then TransCurForm.ShowModal
- else MessageDlg('Перевод средств','Для перевода средств со счёта на счёт'+#10#13+'необходимы как минимум два счёта.',mtInformation,[mbOK],'');
+ if BillGrid.RowCount>1
+  then TransCurForm.ShowModal
+  else MessageDlg('Перевод средств','Для перевода средств со счёта на счёт'+#10#13+'необходимы как минимум два счёта.',mtInformation,[mbOK],'');
 end;
 
 procedure TMainForm.TypeCharGroupClick(Sender: TObject);

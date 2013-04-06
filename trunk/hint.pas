@@ -64,58 +64,59 @@ begin
  else
   // Формируем текст подсказки для строки операции
   begin
-   // Идентификатор записи/корзины
-   xID:=(MainForm.MainGrid.Objects[0, MainForm.MainGrid.Row] as TItemData).ID;
+   // если в таблице есть хотя бы одна строка
+   if Maingrid.rowcount>0 then begin
+    // Идентификатор записи/корзины
+    xID:=(MainForm.MainGrid.Objects[0, MainForm.MainGrid.Row] as TItemData).ID;
 
-   case (MainForm.MainGrid.Objects[0, MainForm.MainGrid.Row] as TItemData).xType of
-   itRashod: // подсказка для корзины
-    begin
-     // вывод данных о составе корзины
-     basket_table:=SQL_db.GetTable('SELECT * FROM rashod WHERE basket='+IntToStr(xID));
-     sum:=0; // сумма для корзины
-     if basket_table.Count>0 then
-      for i:=0 to basket_table.Count-1 do
+    case (MainForm.MainGrid.Objects[0, MainForm.MainGrid.Row] as TItemData).xType of
+    itRashod: // подсказка для корзины
+     begin
+      // вывод данных о составе корзины
+      basket_table:=SQL_db.GetTable('SELECT * FROM rashod WHERE basket='+IntToStr(xID));
+      sum:=0; // сумма для корзины
+      if basket_table.Count>0 then
+       for i:=0 to basket_table.Count-1 do
+        begin
+         // текстовая метка
+         xName:=basket_table.FieldAsString('memo');
+         if Length(xName)<=0 then
+          begin
+           temp_table:=SQL_db.GetTable('SELECT * FROM cat_doh WHERE id='+basket_table.FieldAsString('cat')+' LIMIT 1;');
+           xName:=temp_table.FieldAsString('name');
+          end;
+
+         num:=StrToCurr(basket_table.FieldAsString('num'));
+         price:=StrToCurr(basket_table.FieldAsString('price'));
+         HintBox.Items.Add(xName+'|'+CurrToStr(num*price));
+         sum:=sum+num*price;
+         basket_table.Next;
+        end;
+
+      // вывод итога
+      HintBox.Items.Add('Итого '+IntToStr(basket_table.Count)+' наименований');
+      HintBox.Items.Add('на сумму '+CurrToStr(sum)+' руб.');
+     end;  // of .. itRashod
+
+    itDohod: // доход
+     begin
+      item_table:=SQL_db.GetTable('SELECT * FROM dohod WHERE id='+IntToStr(xID));
+      HintBox.Items.Add('Доход от '+DateToStr(item_table.FieldAsDateTime('date')));
+       //
+      AddDohForm.LoadBillsList(AddDohForm);
+      for i:=0 to AddDohForm.BillBox.Items.Count-1 do
+       if (Integer(AddDohForm.BillBox.Items.Objects[i])=item_table.FieldAsInteger('bill')) then
        begin
-        // текстовая метка
-        xName:=basket_table.FieldAsString('memo');
-        if Length(xName)<=0 then
-         begin
-          temp_table:=SQL_db.GetTable('SELECT * FROM cat_doh WHERE id='+basket_table.FieldAsString('cat')+' LIMIT 1;');
-          xName:=temp_table.FieldAsString('name');
-         end;
-
-        num:=StrToCurr(basket_table.FieldAsString('num'));
-        price:=StrToCurr(basket_table.FieldAsString('price'));
-        HintBox.Items.Add(xName+'|'+CurrToStr(num*price));
-        sum:=sum+num*price;
-        basket_table.Next;
+        HintBox.Items.Add('Счёт: '+AddDohForm.BillBox.Items[i]);
+        break;
        end;
-
-     // вывод итога
-     HintBox.Items.Add('Итого '+IntToStr(basket_table.Count)+' наименований');
-     HintBox.Items.Add('на сумму '+CurrToStr(sum)+' руб.');
-    end;  // of .. itRashod
-
-   itDohod: // доход
-    begin
-     item_table:=SQL_db.GetTable('SELECT * FROM dohod WHERE id='+IntToStr(xID));
-     HintBox.Items.Add('Доход от '+DateToStr(item_table.FieldAsDateTime('date')));
-     //
-     AddDohForm.LoadBillsList(AddDohForm);
-     for i:=0 to AddDohForm.BillBox.Items.Count-1 do
-      if (Integer(AddDohForm.BillBox.Items.Objects[i])=item_table.FieldAsInteger('bill')) then
-      begin
-       HintBox.Items.Add('Счёт: '+AddDohForm.BillBox.Items[i]);
-       break;
-      end;
-     //
-     sum:=StrToCurr(item_table.FieldAsString('sum'));
-     HintBox.Items.Add('Cумма '+CurrToStr(sum)+' руб.');
-    end; // of .. itDohod
+      //
+      sum:=StrToCurr(item_table.FieldAsString('sum'));
+      HintBox.Items.Add('Cумма '+CurrToStr(sum)+' руб.');
+     end; // of .. itDohod
+    end; // if Maingrid.rowcount>0
    end; // case
 
-//   HintBox.Items.Add('Колбаса..........55.11');
-//   HintBox.Items.Add('Хлеб..............8.90');
   end;
  end;
 
