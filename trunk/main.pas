@@ -360,7 +360,7 @@ begin
  BillBox.Width:=MainForm.Width-185;
  DutyBox.Width:=BillBox.Width;
 
- ChartBox.Width:=MainForm.Width-495;
+ ChartBox.Width:=MainForm.Width-330;
  DiagramBox.Width:=ChartBox.Width;
 
  MeasureBox.Left:=CurBox.Width+15;
