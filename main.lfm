@@ -77,10 +77,10 @@ object MainForm: TMainForm
       ClientWidth = 255
       TabOrder = 0
       object TimeLabel: TLabel
-        Left = 21
+        Left = 2
         Height = 20
         Top = 2
-        Width = 231
+        Width = 250
         Align = alCustom
         Alignment = taRightJustify
         AutoSize = False
@@ -128,7 +128,7 @@ object MainForm: TMainForm
       object ChartBox: TGroupBox
         Left = 316
         Height = 230
-        Top = 11
+        Top = 10
         Width = 760
         Caption = 'Круговая диаграмма'
         ClientHeight = 208
@@ -283,19 +283,19 @@ object MainForm: TMainForm
         end
       end
       object DiagramBox: TGroupBox
-        Left = 321
+        Left = 316
         Height = 205
         Top = 239
-        Width = 755
+        Width = 760
         Caption = 'Баланс доходов и расходов (за последние 30 дней)'
         ClientHeight = 183
-        ClientWidth = 751
+        ClientWidth = 756
         TabOrder = 1
         object Chart2: TChart
           Left = 0
           Height = 183
           Top = 0
-          Width = 751
+          Width = 756
           AllowZoom = False
           AxisList = <          
             item
@@ -474,6 +474,7 @@ object MainForm: TMainForm
           BorderSpacing.Bottom = 10
           ColCount = 8
           DefaultDrawing = False
+          DefaultRowHeight = 28
           FixedCols = 0
           FixedRows = 0
           MouseWheelOption = mwGrid
