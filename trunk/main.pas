@@ -301,6 +301,9 @@ var
   //
   DeleteFlag: boolean;
 
+// линкуем секцию ResourceString (текстовые ресурсы, подлежащие переводу)
+//{$I localization\local_main.inc}
+
 implementation
 
 {$R *.lfm}

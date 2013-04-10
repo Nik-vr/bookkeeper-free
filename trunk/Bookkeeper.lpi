@@ -18,7 +18,6 @@
       <XPManifest>
         <DpiAware Value="True"/>
       </XPManifest>
-      <ActiveWindowIndexAtStart Value="0"/>
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
@@ -69,13 +68,13 @@
         <PackageName Value="LCL"/>
       </Item5>
     </RequiredPackages>
-    <Units Count="62">
+    <Units Count="63">
       <Unit0>
         <Filename Value="Bookkeeper.lpr"/>
         <IsPartOfProject Value="True"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="3"/>
-        <CursorPos X="38" Y="16"/>
+        <TopLine Value="1"/>
+        <CursorPos X="21" Y="10"/>
         <UsageCount Value="228"/>
       </Unit0>
       <Unit1>
@@ -86,17 +85,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="main"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="9" Y="2"/>
+        <TopLine Value="285"/>
+        <CursorPos X="11" Y="298"/>
         <UsageCount Value="228"/>
         <Bookmarks Count="2">
-          <Item0 X="36" Y="1695" ID="3"/>
-          <Item1 X="1" Y="2233" ID="4"/>
+          <Item0 X="36" Y="1698" ID="3"/>
+          <Item1 X="1" Y="2236" ID="4"/>
         </Bookmarks>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="C:\Lazarus\lcl\include\treeview.inc"/>
@@ -193,8 +189,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ras_add"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="113"/>
-        <CursorPos X="85" Y="126"/>
+        <TopLine Value="125"/>
+        <CursorPos X="23" Y="137"/>
         <UsageCount Value="201"/>
         <Bookmarks Count="2">
           <Item0 X="1" Y="118" ID="1"/>
@@ -483,7 +479,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="58" Y="9"/>
-        <UsageCount Value="161"/>
+        <UsageCount Value="162"/>
       </Unit46>
       <Unit47>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
@@ -527,7 +523,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="122"/>
         <CursorPos X="14" Y="127"/>
-        <UsageCount Value="130"/>
+        <UsageCount Value="131"/>
       </Unit51>
       <Unit52>
         <Filename Value="Components\SQLite\SQLite3.pas"/>
@@ -607,105 +603,16 @@
         <CursorPos X="31" Y="1318"/>
         <UsageCount Value="9"/>
       </Unit61>
+      <Unit62>
+        <Filename Value="Components\UniqueInstance.pas"/>
+        <UnitName Value="UniqueInstance"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="54"/>
+        <CursorPos X="17" Y="64"/>
+        <UsageCount Value="10"/>
+      </Unit62>
     </Units>
-    <JumpHistory Count="24" HistoryIndex="23">
-      <Position1>
-        <Filename Value="main.pas"/>
-        <Caret Line="1" Column="1" TopLine="1"/>
-      </Position1>
-      <Position2>
-        <Filename Value="main.pas"/>
-        <Caret Line="298" Column="19" TopLine="278"/>
-      </Position2>
-      <Position3>
-        <Filename Value="main.pas"/>
-        <Caret Line="300" Column="11" TopLine="278"/>
-      </Position3>
-      <Position4>
-        <Filename Value="main.pas"/>
-        <Caret Line="821" Column="12" TopLine="799"/>
-      </Position4>
-      <Position5>
-        <Filename Value="main.pas"/>
-        <Caret Line="866" Column="21" TopLine="854"/>
-      </Position5>
-      <Position6>
-        <Filename Value="main.pas"/>
-        <Caret Line="2200" Column="17" TopLine="2188"/>
-      </Position6>
-      <Position7>
-        <Filename Value="main.pas"/>
-        <Caret Line="2207" Column="32" TopLine="2199"/>
-      </Position7>
-      <Position8>
-        <Filename Value="main.pas"/>
-        <Caret Line="1" Column="1" TopLine="1"/>
-      </Position8>
-      <Position9>
-        <Filename Value="main.pas"/>
-        <Caret Line="1113" Column="2" TopLine="1102"/>
-      </Position9>
-      <Position10>
-        <Filename Value="main.pas"/>
-        <Caret Line="1113" Column="2" TopLine="1102"/>
-      </Position10>
-      <Position11>
-        <Filename Value="main.pas"/>
-        <Caret Line="1115" Column="3" TopLine="1102"/>
-      </Position11>
-      <Position12>
-        <Filename Value="main.pas"/>
-        <Caret Line="1157" Column="35" TopLine="1147"/>
-      </Position12>
-      <Position13>
-        <Filename Value="main.pas"/>
-        <Caret Line="2200" Column="40" TopLine="2192"/>
-      </Position13>
-      <Position14>
-        <Filename Value="main.pas"/>
-        <Caret Line="1" Column="1" TopLine="1"/>
-      </Position14>
-      <Position15>
-        <Filename Value="main.pas"/>
-        <Caret Line="251" Column="24" TopLine="234"/>
-      </Position15>
-      <Position16>
-        <Filename Value="main.pas"/>
-        <Caret Line="312" Column="51" TopLine="309"/>
-      </Position16>
-      <Position17>
-        <Filename Value="main.pas"/>
-        <Caret Line="14" Column="22" TopLine="1"/>
-      </Position17>
-      <Position18>
-        <Filename Value="main.pas"/>
-        <Caret Line="1" Column="1" TopLine="1"/>
-      </Position18>
-      <Position19>
-        <Filename Value="main.pas"/>
-        <Caret Line="10" Column="74" TopLine="1"/>
-      </Position19>
-      <Position20>
-        <Filename Value="main.pas"/>
-        <Caret Line="2261" Column="27" TopLine="2242"/>
-      </Position20>
-      <Position21>
-        <Filename Value="main.pas"/>
-        <Caret Line="2255" Column="14" TopLine="2251"/>
-      </Position21>
-      <Position22>
-        <Filename Value="main.pas"/>
-        <Caret Line="8" Column="15" TopLine="1"/>
-      </Position22>
-      <Position23>
-        <Filename Value="main.pas"/>
-        <Caret Line="891" Column="32" TopLine="879"/>
-      </Position23>
-      <Position24>
-        <Filename Value="main.pas"/>
-        <Caret Line="1" Column="1" TopLine="1"/>
-      </Position24>
-    </JumpHistory>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
@@ -715,7 +622,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Components;Components\SQLite"/>
+      <OtherUnitFiles Value="Components;Components\SQLite;Components\uniqueinstance"/>
       <UnitOutputDirectory Value="\units"/>
     </SearchPaths>
     <Parsing>
