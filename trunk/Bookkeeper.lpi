@@ -18,6 +18,7 @@
       <XPManifest>
         <DpiAware Value="True"/>
       </XPManifest>
+      <ActiveWindowIndexAtStart Value="0"/>
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
@@ -85,14 +86,17 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="main"/>
         <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="285"/>
-        <CursorPos X="11" Y="298"/>
+        <TopLine Value="276"/>
+        <CursorPos X="17" Y="280"/>
         <UsageCount Value="228"/>
         <Bookmarks Count="2">
           <Item0 X="36" Y="1698" ID="3"/>
           <Item1 X="1" Y="2236" ID="4"/>
         </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="C:\Lazarus\lcl\include\treeview.inc"/>
@@ -521,8 +525,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="hint"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="122"/>
-        <CursorPos X="14" Y="127"/>
+        <TopLine Value="53"/>
+        <CursorPos X="18" Y="56"/>
         <UsageCount Value="131"/>
       </Unit51>
       <Unit52>
