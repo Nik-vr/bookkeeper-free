@@ -82,7 +82,7 @@ begin
          xName:=basket_table.FieldAsString('memo');
          if Length(xName)<=0 then
           begin
-           temp_table:=SQL_db.GetTable('SELECT * FROM cat_doh WHERE id='+basket_table.FieldAsString('cat')+' LIMIT 1;');
+           temp_table:=SQL_db.GetTable('SELECT * FROM cat_ras WHERE id='+basket_table.FieldAsString('cat')+' LIMIT 1;');
            xName:=temp_table.FieldAsString('name');
           end;
 
@@ -114,8 +114,8 @@ begin
       sum:=StrToCurr(item_table.FieldAsString('sum'));
       HintBox.Items.Add('Cумма '+CurrToStr(sum)+' руб.');
      end; // of .. itDohod
-    end; // if Maingrid.rowcount>0
-   end; // case
+    end; // case
+   end; // if Maingrid.rowcount>0
 
   end;
  end;
